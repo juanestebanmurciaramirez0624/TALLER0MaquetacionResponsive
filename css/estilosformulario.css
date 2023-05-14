@@ -1,0 +1,90 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    text-align: center;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+    .header {
+        grid-area: header;
+        background-color: red;
+    }
+    
+    .nav {
+        grid-area: nav;
+        background-color: blueviolet;
+    }
+    
+    .section {
+        grid-area: section;
+        background-color: chartreuse;
+    }
+    .form{
+        grid-area: form;
+        background-color:blue;
+        height: 50%;
+        margin-top:4%;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-bottom:5%;
+        border-radius:10px;
+    }
+    .footer {
+        grid-area: footer;
+        background-color: aqua;
+    }
+    
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 15% 10% 50% 25%;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "section section . form"
+            "footer footer footer footer";
+    }
+}
+@media (min-width: 768px) and (max-width: 4000px) {
+    .header {
+        grid-area: header;
+        background-color: red;
+    }
+    
+    .nav {
+        grid-area: nav;
+        background-color: blueviolet;
+    }
+    
+    .section {
+        grid-area: section;
+        background-color: chartreuse;
+    }
+    .form{
+        grid-area: form;
+        background-color:blue;
+        height: 50%;
+        margin-top:4%;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-bottom:15%;
+        border-radius:10px;
+    }
+    .footer {
+        grid-area: footer;
+        background-color: aqua;
+    }
+    
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 15% 65% 20%;
+            grid-template-areas:
+            "header header header header"
+            "nav section . form"
+            "footer footer footer footer";
+    }
+}
+    
